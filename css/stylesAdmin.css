@@ -1,0 +1,143 @@
+body{
+    background-image: url(../img/fondito1.jpg);
+}
+
+/*menu*/
+* {
+	margin:0px;
+	padding:0px;
+}
+
+#header {
+	margin:auto;
+	width:500px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+	list-style:none;
+}
+
+.nav > li {
+	float:left;
+}
+
+.nav li a {
+	background-color:#2D3E50;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}
+
+.nav li a:hover {
+	background-color: white;
+	color: black;
+}
+
+.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+.nav li:hover > ul {
+	display:block;
+}
+
+.nav li ul li {
+	position:relative;
+}
+
+.nav li ul li ul {
+	right:-140px;
+	top:0px;
+}
+
+/*calendario*/
+
+.Calendario{
+    /*height: 200px;
+	width: 180px;*/
+	max-width: 100%;
+    height: auto;
+}
+
+.CalendarioGoogle{
+	max-width: 95%;
+    height: 200px;
+}
+
+/*usuaro*/
+label{  
+	color: white;
+	font-size: 30px;
+}
+.Usuario{
+    height: 50px;
+    width: 50px;
+}
+
+.Oculto{
+    visibility: hidden
+}
+
+/*contenedor de juegos - eventos */
+.Superpuesto{
+position: absolute; 
+left: 10px; 
+width: 100%;
+top: 60px;
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+h6{
+	color:rgba(255,255,255);
+}
+
+#Eventos{
+    background-color: blue
+}
+
+#BotonBuscar{
+	margin-right: 40px;
+	border-color: white
+	
+
+}
+
+.container{
+    margin-top: 100px;
+}
+
+/*titulo*/
+.titulo{
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	background: #2D3E50;
+
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*botones*/
+.nav-tabs{
+	border-bottom:0px;
+}
+
+.botones{
+    position:absolute;
+     top:0;
+     right:0;
+     width:2000px;    
+}
+
+.tab-content{
+    position: absolute; 
+    left: 10px; 
+    width: 100%;
+    top: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    }

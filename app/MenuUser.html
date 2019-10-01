@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu principal</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styleMenu.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+
+                    <!--menu-->
+                    <div id="header">
+                        <ul class="nav">
+                            <li><a href="" >Inicio</a></li>
+                            <li><a href=Perfil.html >Perfil</a>
+                                <ul>
+                                    <li><a href="">Configuración</a></li>
+                                    <li><a href="">Datos personales</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" >Acerca de</a>
+                                <ul>
+                                    <li><a href="">Nosotros</a></li>
+                                    <li><a href="">Lugares</a></li>
+                                    <!--li><a href="">Submenu3</a></li>
+                                    <li><a href="">Submenu4</a></li-->
+                                </ul>
+                            </li>
+                            <li><a href="">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <!--select name="Opciones" id="Opciones">
+                        <option value="1">Perfil</option>
+                        <option value="2">Menú</option>
+                    </select>
+                    <button onclick="CambiarPagina()" id="OpcionesBoton"><img src="../img/Opciones.png"></button-->
+                </ul>
+
+                <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+                    <button id="BotonBuscar" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                    <label for="Usuario">Usuario</label>
+                    <img src="../img/Usuario.png" class="Usuario">
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="titulo">
+            PACTO LÚDICO
+        </h1>
+        <div class="row ">
+            <div class="col-3">
+                <iframe src="https://calendar.google.com/calendar/embed?src=k34tj57ci0jf19idkk4pt012k0%40group.calendar.google.com&ctz=America%2FBogota" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" class="CalendarioGoogle"></iframe>
+            </div>
+            <div class="col-9">
+
+                <!--botones-->
+                <div class="row">
+                    <button onclick="RevelarDiv1()" class="boton">Juegos</button>
+                    <button onclick="RevelarDiv2()" class="boton">Eventos</button>
+                </div>
+
+                <div id="Div1" class="wrap Superpuesto">
+                    <div class="store-wrapper">
+
+                        <!--categoria de juego-->
+                        <div class="category_list">
+                            <a href="#" class="category_item" category="all">Todo</a>
+                            <a href="#" class="category_item" category="Ameritrash">Ameritrash</a>
+                            <a href="#" class="category_item" category="Cartas">Cartas</a>
+                            <a href="#" class="category_item" category="Dados">Dados</a>
+                            <a href="#" class="category_item" category="Eurogames">Eurogames</a>
+                            <a href="#" class="category_item" category="Fichas">Fichas</a>
+                            <a href="#" class="category_item" category="Filler">Filler</a>
+                            <a href="#" class="category_item" category="Guerra">Guerra</a>
+                            <a href="#" class="category_item" category="Miniatura">Miniaturas</a>
+                            <a href="#" class="category_item" category="Party">Party Games</a>
+                            <a href="#" class="category_item" category="Rol">Rol</a>
+                            <a href="#" class="category_item" category="Tradicional">Tablero tradicionales</a>
+                        </div>
+
+                        <!--juegos-->
+                        <section class="products-list">
+                            <!---------------------------------------->
+                            <div class="product-item" category="Party">
+                                <img src="../img/Juegos/Party Games/TheLandlordsGame.jpg" alt="">
+                                <!--a href="#">The Landlord's Game</a-->
+                                <a href="#modal1">The Landlord's Game</a>
+                                <!--modal 1-->
+                                <div id="modal1" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">The Landlord's Game</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Dados">
+                                <img src="../img/Juegos/Dados/Parchis.jpg" alt="">
+                                <a href="#modal2">Parchis</a>
+                                <!--modal 2-->
+                                <div id="modal2" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Parchis</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Cartas">
+                                <img src="../img/Juegos/Cartas/Bang.png" alt="">
+                                <a href="#modal3">Bang</a>
+                                <!--modal 3-->
+                                <div id="modal3" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Bang</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Ameritrash">
+                                <img src="../img/Juegos/Ameritrash/Descent.jpg" alt="">
+                                <a href="#modal4">Descent</a>
+                                <!--modal 4-->
+                                <div id="modal4" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Descent</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Eurogames">
+                                <img src="../img/Juegos/Eurogames/AveCesar.jpg" alt="">
+                                <a href="#modal5">AveCesar</a>
+                                <!--modal 5-->
+                                <div id="modal5" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">AveCesar</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Fichas">
+                                <img src="../img/Juegos/Fichas/Domino.jpg" alt="">
+                                <a href="#modal6">Domino</a>
+                                <!--modal 6-->
+                                <div id="modal6" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Domino</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Filler">
+                                <img src="../img/Juegos/Filler/Dixit.jpg" alt="">
+                                <a href="#modal7">Dixit</a>
+                                <!--modal 7-->
+                                <div id="modal7" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Dixit</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Guerra">
+                                <img src="../img/Juegos/Guerra/BattleTech.jpg" alt="">
+                                <a href="#modal8">BattleTech</a>
+                                <!--modal 8-->
+                                <div id="modal8" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">BattleTech</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Miniatura">
+                                <img src="../img/Juegos/Miniatura/ElSeñorAnillos.jpg" alt="">
+                                <a href="#modal9">El Señor de los Anillos</a>
+                                <!--modal 9-->
+                                <div id="modal9" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">El Señor de los Anillos</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Party">
+                                <img src="../img/Juegos/Party Games/GiftTRAP.jpg" alt="">
+                                <a href="#modal10">GiftTRAP</a>
+                                <!--modal 10-->
+                                <div id="modal10" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">GiftTRAP</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Rol">
+                                <img src="../img/Juegos/Rol/Dungeons_Dragons.jpg" alt="">
+                                <a href="#modal11">Dungeons & Dragons</a>
+                                <!--modal 11-->
+                                <div id="modal11" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Dungeons & Dragons</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Ameritrash">
+                                <img src="../img/Juegos/Ameritrash/TwilightImperium.jpg" alt="">
+                                <a href="#modal12">Twilight Imperium</a>
+                                <!--modal 12-->
+                                <div id="modal12" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Twilight Imperium</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Cartas">
+                                <img src="../img/Juegos/Cartas/Baraja Espanola.jpg" alt="">
+                                <a href="#modal13">Baraja Española</a>
+                                <!--modal 13-->
+                                <div id="modal13" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Baraja Española</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Dados">
+                                <img src="../img/Juegos/Dados/Backgammon.jpg" alt="">
+                                <a href="#modal14">Backgammon</a>
+                                <!--modal 14-->
+                                <div id="modal14" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Backgammon</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Eurogames">
+                                <img src="../img/Juegos/Eurogames/caylus.jpg" alt="">
+                                <a href="#modal15">Caylus</a>
+                                <!--modal 15-->
+                                <div id="modal15" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Caylus</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Fichas">
+                                <img src="../img/Juegos/Fichas/Mahjong.jpg" alt="">
+                                <a href="#modal16">Mahjong</a>
+                                <!--modal 16-->
+                                <div id="modal16" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Mahjong</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Guerra">
+                                <img src="../img/Juegos/Guerra/Risk.jpg" alt="">
+                                <a href="#modal17">Risk</a>
+                                <!--modal 17-->
+                                <div id="modal17" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Risk</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Miniatura">
+                                <img src="../img/Juegos/Miniatura/WarhammerFantasy.jpg" alt="">
+                                <a href="#modal18">Warhammer Fantasy</a>
+                                <!--modal 18-->
+                                <div id="modal18" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Warhammer Fantasy</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Party">
+                                <img src="../img/Juegos/Party Games/Monopoly.jpg" alt="">
+                                <a href="#modal19">Monopoly</a>
+                                <!--modal 19-->
+                                <div id="modal19" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Monopoly</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                            <div class="product-item" category="Tradicional">
+                                <img src="../img/Juegos/Tablero tradicional/Xiangqi.jpg" alt="">
+                                <a href="#modal20">Xiangqi</a>
+                                <!--modal 20-->
+                                <div id="modal20" class="modalmask">
+                                    <div class="modalbox movedown">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2 class="bar-title">Xiangqi</h2>
+                                        <h4>DESCRIPCIÓN</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                        <h4>COMPONENTES</h4>
+                                        <p>Aquí puedes incluir cualquier cosa como vídeos, mapas, formularios...</p><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------------------------------->
+                        </section>
+                    </div>
+                </div>
+
+                <!--eventos-->
+                <div id="Div2" class="Oculto">
+                    <h6>Eventos proximos</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/appMenu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

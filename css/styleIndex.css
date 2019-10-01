@@ -1,0 +1,39 @@
+
+body{
+    background-image: url(../img/fondito1.jpg);
+    background-repeat: no-repeat;
+}
+.parrafo{   /*modificar por el atributo class*/
+    background-color: aqua
+}
+#p1{        /* modificar por el atributo id */
+    color: aqua
+}
+.Error{
+    border-color: brown;
+}
+.ErrorLabel{
+    color: brown;
+}
+img{
+    margin-top: 150px;
+    margin-bottom: 0px; 
+    width: 250px;
+    height: 100px;
+}
+#DivIniciarSesion{
+    margin-top: 50px
+}
+#userL{
+    margin-right: 20px
+}
+h2{
+    background-color: blueviolet
+}
+label{
+    color: rgb(87, 83, 82);
+}
+
+.LabelUsado{
+    color: aliceblue;
+}

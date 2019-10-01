@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfil</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styleMenu.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <select name="Opciones" id="Opciones">
+                    <option value="1">Menú</option>
+                    <option value="2">Perfil</option>
+                </select>
+                <button onclick="CambiarPagina()" id="OpcionesBoton"><img src="../img/Opciones.png" ></button>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">  
+              <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+              <button id="BotonBuscar" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+              <label for="Usuario">Ususario</label>
+              <img src="../img/Usuario.png" class="Usuario">
+            </form>
+          </div>
+      </nav>
+    </header>
+
+            <div class="container">
+                <div class="row">
+                  <div class="col-3">
+                    <img src="../img/Calendario-Mensual-Septiembre-2019.jpg" class="Calendario">
+                  </div>
+                  <div class="col-9">
+                    <p>
+                          <button onclick="RevelarDiv1()" class="boton">Información</button>
+                          <button onclick="RevelarDiv2()" class="boton">Notificaciones</button>
+                    </p>
+                    <div id="Div1" class="Superpuesto">
+                      <div class="row">
+                        <div class="col">
+                        <h6>Primer Nombre</h6>
+                        <input type="text" class="form-control">
+                        </div>
+                        <div class="col">
+                        <h6>Segundo Nombre</h6>
+                        <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col">
+                              <h6>Primer Apellido</h6>
+                              <input type="text" class="form-control">
+                              </div>
+                              <div class="col">
+                              <h6>Segundo Apellido</h6>
+                              <input type="text" class="form-control">
+                              </div>
+                      </div>
+                      <div class="row">
+                          <div class="col">
+                          <h6>Correo electronico</h6>
+                          <input type="text" class="form-control">
+                          </div>
+                          <div class="col">
+                          <h6>Contraseña</h6>
+                          <input type="text" class="form-control">
+                          </div>
+                        </div>
+                    </div>
+                    
+                    <div id="Div2" class="Oculto">
+                        <h6>Notificaciones</h6>
+                    </div>
+                 </div>
+                </div>
+           </div>
+           
+        <script src="../js/appMenu.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
